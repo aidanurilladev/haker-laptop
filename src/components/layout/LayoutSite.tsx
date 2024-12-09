@@ -8,13 +8,11 @@ interface LayoutSiteProps {
 }
 const LayoutSite: FC<LayoutSiteProps> = ({ children }) => {
   return (
-    <>
-      <div>
+    <div className={scss.LayoutSite}>
         <Header />
         <main>{children}</main>
         <Footer />
-      </div>
-    </>
+    </div>
   );
 };
 
