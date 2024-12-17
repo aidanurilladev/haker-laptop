@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
+import Catalog from "../catalog/Catalog";
 import Accessory from '../accessory/Accessory';
-import CardsAccessory from '../accessory/CardsAccessory';
-
 
 const MainPage = () => {
-    return (
-        <div>
- <Accessory/>
- <CardsAccessory/>
-        </div>
-    );
-};
+  return (
+    <div>
+      Main Page
+      <Catalog />
+       <Accessory/>
+    </div>
+  );
+
 
 export default MainPage;
