@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import Catalog from "../catalog/Catalog";
 
 const MainPage = () => {
-    return (
-        <div>
-            Main Page
-        </div>
-    );
+  return (
+    <div>
+      Main Page
+      <Catalog />
+    </div>
+  );
 };
 
 export default MainPage;
