@@ -1,9 +1,13 @@
 import React from 'react';
+import Accessory from '../accessory/Accessory';
+import CardsAccessory from '../accessory/CardsAccessory';
+
 
 const MainPage = () => {
     return (
         <div>
-            Main Page
+ <Accessory/>
+ <CardsAccessory/>
         </div>
     );
 };
