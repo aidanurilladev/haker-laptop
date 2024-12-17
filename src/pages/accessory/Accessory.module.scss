@@ -1,0 +1,30 @@
+#accessory {
+    background-color: #222222;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    font-family:sans-serif;
+
+    .accessory {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .menu {
+        text-align: center;
+        color: #999;
+
+        &:hover {
+            color: white;
+
+        }
+
+        h1 {
+            width: 110px;
+            display: block;
+            font-size: 50px;
+            line-height: 1.2;
+        }
+    }
+}
