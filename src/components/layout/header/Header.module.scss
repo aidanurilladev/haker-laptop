@@ -50,10 +50,22 @@
       }
     }
 
-    .userIcon {
-      color: white;
-      font-size: 24px;
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 25px;
       cursor: pointer;
+    }
+
+    .burger {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 22px;
+      cursor: pointer;
+      color: white;
     }
   }
 }
