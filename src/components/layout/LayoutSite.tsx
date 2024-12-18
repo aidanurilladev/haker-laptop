@@ -14,7 +14,7 @@ const LayoutSite: FC<LayoutSiteProps> = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoader(false);
-    }, 2000);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);

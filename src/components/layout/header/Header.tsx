@@ -6,8 +6,8 @@ import Link from "next/link";
 import logo from "@/assets/haket_laptop.png";
 import { FaUser } from "react-icons/fa";
 import { useRef, useState, useEffect } from "react";
-import BurgerMenu from "@/components/ui/burgerMenu /BurgerMenu";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
+import BurgerMenu from "@/components/ui/burgerMenu/BurgerMenu";
 
 const Header = () => {
   const pathname = usePathname();
