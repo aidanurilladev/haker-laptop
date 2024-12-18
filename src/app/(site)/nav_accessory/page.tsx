@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CharacteristicAccessory = () => {
+const page = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const CharacteristicAccessory = () => {
     );
 };
 
-export default CharacteristicAccessory;
+export default page;
