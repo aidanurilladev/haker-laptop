@@ -3,7 +3,7 @@ import s from "./ModalInstallmentPlan.module.scss";
 import { RiCloseLargeLine } from "react-icons/ri";
 import Image from "next/image";
 import InstallmentPlan from "./components/installmentPlan/InstallmentPlan";
-
+import mous from "../../assets/mous-removebg-preview.png";
 const ModalInstallmentPlan = () => {
   return (
     <div className={s.modalInstallmentPlan}>
@@ -13,7 +13,7 @@ const ModalInstallmentPlan = () => {
       <div className={s.content}>
         <div className={s.product}>
           <div className={s.productImg}>
-            <Image src={""} alt="img" />
+            <Image src={mous} alt="img" />
           </div>
           <h2>Logitech G304 Lightspeed Black</h2>
         </div>
