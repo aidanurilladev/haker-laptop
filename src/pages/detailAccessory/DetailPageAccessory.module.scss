@@ -3,31 +3,38 @@
   font-family: sans-serif;
   .mainCharacter {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     .detailPageAccessoryImg {
       width: 50%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: -50px;
-        left: -50px;
-        right: -50px;
-        bottom: -50px;
-        background: radial-gradient(
-          circle,
-          rgb(159 147 147 / 30%),
-          rgba(0, 0, 0, 0) 70%
-        );
-        filter: blur(30px);
-        z-index: -1;
-      }
+     img {
+      width: 200%;
+      height: 100%;
+     }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -50px;
+      //   left: -50px;
+      //   right: -50px;
+      //   bottom: -50px;
+      //   background: radial-gradient(
+      //     circle,
+      //     rgb(159 147 147 / 30%),
+      //     rgba(0, 0, 0, 0) 50%
+      //   );
+      //   filter: blur(30px);
+      //   z-index: -1;
+      // }
+     
     }
     .detailPageAccessoryText {
+      width: 50%;
       h1 {
         font-size: 2rem;
         font-weight: 400;
