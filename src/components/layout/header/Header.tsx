@@ -7,6 +7,7 @@ import logo from "@/assets/haket_laptop.png";
 import { FaUser } from "react-icons/fa";
 import { useRef, useState, useEffect } from "react";
 import BurgerMenu from "@/components/ui/burgerMenu /BurgerMenu";
+import { PiShoppingCartSimpleFill } from "react-icons/pi";
 
 const Header = () => {
   const pathname = usePathname();
@@ -15,7 +16,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1000); 
+      setIsMobile(window.innerWidth <= 1000);
     };
 
     handleResize();
@@ -28,6 +29,7 @@ const Header = () => {
       <div className="container">
         <div className={scss.content}>
           <Image width={150} height={150} src={logo} alt="logo" />
+
           {!isMobile ? (
             <>
               <div className={scss.nav} ref={navRef}>
@@ -53,10 +55,20 @@ const Header = () => {
                   контакт
                 </Link>
               </div>
-              <FaUser />
+              <div className={scss.icon}>
+                <PiShoppingCartSimpleFill />
+                <FaUser />
+              </div>
             </>
           ) : (
-            <BurgerMenu />
+            <>
+              <div className={scss.burger}>
+                <FaUser />
+
+                <PiShoppingCartSimpleFill />
+                <BurgerMenu />
+              </div>
+            </>
           )}
         </div>
       </div>

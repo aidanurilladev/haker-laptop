@@ -20,6 +20,7 @@ const BurgerMenu = () => {
 
   return (
     <div className={scss.burgerMenu}>
+      
       <button className={scss.burgerIcon} onClick={toggleMenu}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
@@ -57,14 +58,7 @@ const BurgerMenu = () => {
         >
           контакт
         </Link>
-        <Link
-          href="/admin"
-          onClick={toggleMenu}
-          className={pathname === "/admin" ? scss.active : ""}
-          tabIndex={disableClicks ? -1 : 0} 
-        >
-          <FaUser /> Админ
-        </Link>
+       
       </div>
     </div>
   );
