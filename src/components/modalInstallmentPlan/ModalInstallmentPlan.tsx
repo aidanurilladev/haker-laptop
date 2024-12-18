@@ -4,6 +4,7 @@ import { RiCloseLargeLine } from "react-icons/ri";
 import Image from "next/image";
 import InstallmentPlan from "./components/installmentPlan/InstallmentPlan";
 import mous from "../../assets/mous-removebg-preview.png";
+
 const ModalInstallmentPlan = () => {
   return (
     <div className={s.modalInstallmentPlan}>
