@@ -1,24 +1,54 @@
-#cardsAcc{
+#cardsAcc {
     font-family: sans-serif;
-    .cardsAcc{
+
+    .cardsAcc {
         display: flex;
         align-items: center;
         justify-content: center;
-      flex-direction: column;
-      margin-bottom: 40px;
-      margin-top: 40px;
-      h1{
-        font-size: 2.625rem;
-      }
-        p{
-            
+        flex-direction: column;
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+        h1 {
+            font-size: 2.625rem;
+        }
+
+        p {
+
             text-align: center;
             margin-top: 20px;
             font-size: 1.125rem;
             color: #bbb9b9;
             line-height: 1.8rem;
-           
+
         }
 
+    }
+
+    .cards {
+       display: flex;
+       align-items: center;
+       gap: 9px;
+        margin-bottom: 10px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        .cardsBlock {
+            text-align: center;
+
+            img {
+                width: 100%;
+                height: 240px;
+                cursor: pointer;
+
+            }
+
+            h1 {
+                font-weight: 400;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                cursor: pointer;
+            }
+        }
     }
 }
