@@ -1,13 +1,11 @@
 import React from 'react';
 
-
-
-const MainPage = () => {
+const page = () => {
     return (
         <div>
-
+            
         </div>
     );
 };
 
-export default MainPage;
+export default page;
