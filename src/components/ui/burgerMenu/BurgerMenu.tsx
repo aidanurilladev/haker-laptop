@@ -20,7 +20,6 @@ const BurgerMenu = () => {
 
   return (
     <div className={scss.burgerMenu}>
-      
       <button className={scss.burgerIcon} onClick={toggleMenu}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
