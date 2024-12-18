@@ -1,4 +1,5 @@
 .detailLocation {
+  border-bottom: 1px solid #6d7175;
   .home {
     display: flex;
     gap: 10px;
@@ -47,8 +48,9 @@
       }
       .closeLocation {
         position: relative;
-        display: flex;
+        display: none;
         justify-content: space-between;
+
         width: 100%;
         flex-direction: column;
         h3 {
@@ -72,13 +74,19 @@
         .address {
           display: flex;
           align-items: center;
+
           gap: 20px;
           .map {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 57px;
+            border-radius: 5px;
             background-color: whitesmoke;
           }
           .addressText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px 0;
             h3 {
               color: white;
               font-weight: 500;
@@ -88,10 +96,35 @@
                 cursor: none;
               }
             }
-            
+            a {
+              font-size: 15px;
+              color: #999999;
+              padding: 6px 0;
+              font-weight: 400;
+            }
+            h5 {
+              margin: 0;
+              color: #dfd9d9;
+            }
           }
         }
       }
+    }
+  }
+  .city {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #c0ff00;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100px;
+    padding: 20px 0 10px 0;
+    &:hover {
+      text-decoration: underline dashed;
+      text-underline-offset: 3px;
     }
   }
 }
