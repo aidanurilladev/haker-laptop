@@ -90,7 +90,7 @@ const Answer: FC = () => {
                   </>
                 ))}
               </div>
-              <button>Записаться на сервис</button>
+              <button>Записаться на сервиc</button>
             </div>
             <Image
               className={scss.image}
