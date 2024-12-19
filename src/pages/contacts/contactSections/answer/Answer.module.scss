@@ -1,0 +1,109 @@
+.Answer {
+  padding: 25px 0;
+  .content {
+    .countrybtns {
+      h1 {
+        font-size: 40px;
+        padding: 20px 0;
+      }
+      .btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        button {
+          background: #fff;
+          color: #000;
+          border: none;
+          padding: 18px 78px;
+          border-radius: 18px;
+          &:hover,
+          :active {
+            background: rgb(29, 29, 181);
+            color: #fff;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .questionBlock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      padding: 30px 20px;
+
+      .image {
+        border-radius: 10px;
+      }
+
+      .block {
+        background: #1c1c1e;
+        border-radius: 28px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+        height: 500px;
+        padding: 0 40px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 16px;
+          color: #bdbdbd;
+        }
+
+        .separator {
+          border-top: 1px solid #404040;
+          margin: 10px 0;
+          width: 100%;
+        }
+        button {
+          background: yellow;
+          color: #000;
+          border: 8px;
+          outline: none;
+          cursor: pointer;
+          padding: 8px 18px;
+          border-radius: 8px;
+        }
+        .datas {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          .data {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            p {
+              font-size: 14px;
+              color: #a9a9a9;
+            }
+
+            h6 {
+              font-size: 16px;
+              color: #fff;
+            }
+
+            a {
+              color: #4b8bf5;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

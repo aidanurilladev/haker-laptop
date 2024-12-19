@@ -7,15 +7,15 @@ import { usePathname } from "next/navigation";
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [disableClicks, setDisableClicks] = useState(false); 
+  const [disableClicks, setDisableClicks] = useState(false);
   const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    setDisableClicks(true); 
+    setDisableClicks(true);
     setTimeout(() => {
-      setDisableClicks(false); 
-    }, 500); 
+      setDisableClicks(false);
+    }, 500);
   };
 
   return (
@@ -28,7 +28,7 @@ const BurgerMenu = () => {
           href="/"
           onClick={toggleMenu}
           className={pathname === "/" ? scss.active : ""}
-          tabIndex={disableClicks ? -1 : 0} 
+          tabIndex={disableClicks ? -1 : 0}
         >
           главная
         </Link>
@@ -36,7 +36,7 @@ const BurgerMenu = () => {
           href="/accessory"
           onClick={toggleMenu}
           className={pathname === "/accessory" ? scss.active : ""}
-          tabIndex={disableClicks ? -1 : 0} 
+          tabIndex={disableClicks ? -1 : 0}
         >
           акссессуар
         </Link>
@@ -44,20 +44,19 @@ const BurgerMenu = () => {
           href="/catalog"
           onClick={toggleMenu}
           className={pathname === "/catalog" ? scss.active : ""}
-          tabIndex={disableClicks ? -1 : 0} 
+          tabIndex={disableClicks ? -1 : 0}
         >
           каталог
         </Link>
-      
+
         <Link
           href="/contact"
           onClick={toggleMenu}
           className={pathname === "/contact" ? scss.active : ""}
-          tabIndex={disableClicks ? -1 : 0} 
+          tabIndex={disableClicks ? -1 : 0}
         >
           контакт
         </Link>
-       
       </div>
     </div>
   );
