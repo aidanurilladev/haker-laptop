@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react';
+import DetailNoud from '../detailNoud/DetailNoud';
+  
 
 const MainPage = () => {
-  return <div>Main Page</div>;
+    return (
+        <div>
+            <DetailNoud/>
+        </div>
+    );
+
 };
 
 
