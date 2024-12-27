@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch:sass": "sass --watch src/styles:public/styles --no-source-map"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.4.0",

@@ -8,6 +8,10 @@ const MainPage = () => {
             <DetailNoud/>
         </div>
     );
+
 };
+
+
+
 
 export default MainPage;
