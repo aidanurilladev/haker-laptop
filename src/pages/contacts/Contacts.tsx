@@ -7,6 +7,7 @@ import { IoPerson, IoSettingsOutline } from "react-icons/io5";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { MdWifiTethering } from "react-icons/md";
 import Answer from "./contactSections/answer/Answer";
+import QuestionFor from "./contactSections/questionfor/QuestionFor";
 
 const contacts = [
   { icon: <CgMenuGridR />, label: "Компания" },
@@ -23,9 +24,9 @@ const Contacts: FC = () => {
       <div className="container">
         <div className={scss.content}>
           <div className={scss.mainNav}>
-            {contacts.map((el) => (
+            {contacts.map((el, idx) => (
               <>
-                <div className={scss.contact_nav}>
+                <div key={idx} className={scss.contact_nav}>
                   <div className={scss.icon}>
                     <h1 className={scss.ico}>{el.icon}</h1>
                     <span>{el.label}</span>
@@ -37,6 +38,7 @@ const Contacts: FC = () => {
           <Answer />
         </div>
       </div>
+      <QuestionFor />
     </section>
   );
 };

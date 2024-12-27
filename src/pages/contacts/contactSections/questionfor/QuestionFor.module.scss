@@ -1,0 +1,66 @@
+.QuestionFor {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url("../../../../assets/purple-neon-design-purple-blue-abstract-glowing-glowing-neon-lamp-lines-3d-illustration_507676-201.avif")
+      no-repeat center center / cover;
+    border-radius: 20px 0 0 20px;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 30px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  .right {
+    flex: 1;
+    z-index: 2;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
