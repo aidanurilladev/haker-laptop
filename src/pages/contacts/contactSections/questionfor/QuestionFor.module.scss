@@ -1,7 +1,7 @@
 .QuestionFor {
   background-color: #000;
   color: #fff;
-  padding: 50px 0;
+  padding: 50px 5vw;
   position: relative;
 
   &::before {
@@ -11,56 +11,148 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background: url("../../../../assets/purple-neon-design-purple-blue-abstract-glowing-glowing-neon-lamp-lines-3d-illustration_507676-201.avif")
-      no-repeat center center / cover;
+    background: url("../../../../assets/maria-zaitseva-01-a0057.jpg") no-repeat
+      center center / cover;
     border-radius: 20px 0 0 20px;
     z-index: 1;
+    filter: brightness(0.8);
   }
 
   .container {
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   .wrapper {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
     gap: 30px;
-    background: #1a1a1a;
     border-radius: 20px;
     padding: 30px;
     width: 100%;
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   }
 
   .left {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     z-index: 2;
-
+    height: auto;
+    text-align: center;
+    margin-top: 100px;
     h2 {
-      font-size: 32px;
+      font-size: clamp(24px, 4vw, 36px);
       margin-bottom: 15px;
+      color: #e6e6e6;
     }
 
     p {
-      font-size: 18px;
-      line-height: 1.5;
+      font-size: clamp(14px, 2.5vw, 18px);
+      line-height: 1.8;
+      color: #ccc;
     }
   }
 
   .right {
     flex: 1;
     z-index: 2;
+    min-width: 300px;
+    max-width: 700px;
+    border-radius: 20px;
+    padding: 20px;
+    background: #0d0d0d;
+
     form {
       display: flex;
       flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
       gap: 20px;
+
+      button {
+        border: none;
+        outline: none;
+        padding: 12px 5vw;
+        background-color: #33006f;
+        color: #fff;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #4b009e;
+        }
+      }
+
+      .inputGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 12px 15px;
+          background: #121212;
+          border-radius: 12px;
+          border: 1px solid rgb(63, 63, 63);
+          color: #fff;
+          outline: none;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            border-color: #4b009e;
+          }
+        }
+      }
+
+      .checkboxGroup {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &::before {
+      width: 100%;
+      height: 50%;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .wrapper {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .left,
+    .right {
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    .right form {
+      button {
+        width: 100%;
+      }
+
+      .inputGroup input,
+      .inputGroup textarea {
+        width: 100%;
+      }
     }
   }
 }
