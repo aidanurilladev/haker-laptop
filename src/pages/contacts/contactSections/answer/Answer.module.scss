@@ -1,45 +1,68 @@
 .Answer {
-  padding: 25px 0;
+  padding: 25px 5vw;
+
   .content {
     .countrybtns {
+      text-align: center;
+
       h1 {
-        font-size: 40px;
+        font-size: clamp(24px, 4vw, 40px);
         padding: 20px 0;
+        color: transparent;
+        background: linear-gradient(90deg, #481781, #f7f4f4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-weight: bold;
+        text-align: center;
       }
+
       .btns {
         display: flex;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         gap: 20px;
+
         button {
           background: #fff;
           color: #000;
           border: none;
-          padding: 18px 78px;
+          padding: 18px 5vw;
           border-radius: 18px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
           &:hover,
           :active {
             background: rgb(29, 29, 181);
             color: #fff;
-            font-size: 15px;
+            font-size: 17px;
+            transform: translateY(-2px);
           }
         }
       }
     }
+
     .questionBlock {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
       color: #fff;
       padding: 30px 20px;
 
       .image {
         border-radius: 10px;
+        width: clamp(300px, 50%, 500px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        height: 500px;
       }
 
       .block {
         background: #1c1c1e;
         border-radius: 28px;
+        width: clamp(300px, 50%, 500px);
         max-width: 600px;
         display: flex;
         flex-direction: column;
@@ -47,32 +70,48 @@
         justify-content: center;
         gap: 20px;
         height: 500px;
-        padding: 0 40px;
+        padding: 30px 40px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        .linear {
+          border-bottom: 1px solid #fff;
+          width: 100%;
+        }
 
         h1 {
-          font-size: 30px;
+          font-size: clamp(20px, 3vw, 30px);
           font-weight: 700;
+          color: #fff;
         }
 
         p {
           font-size: 16px;
           color: #bdbdbd;
+          line-height: 1.5;
         }
 
         .separator {
           border-top: 1px solid #404040;
-          margin: 10px 0;
+          margin: 15px 0;
           width: 100%;
         }
+
         button {
           background: yellow;
           color: #000;
-          border: 8px;
+          border: none;
           outline: none;
           cursor: pointer;
-          padding: 8px 18px;
+          padding: 12px 24px;
           border-radius: 8px;
+          font-weight: 600;
+          transition: background 0.3s ease, transform 0.3s ease;
+
+          &:hover {
+            background: #ffcc00;
+            transform: scale(1.05);
+          }
         }
+
         .datas {
           display: flex;
           flex-wrap: wrap;
@@ -82,6 +121,7 @@
             display: flex;
             flex-direction: column;
             gap: 5px;
+            text-align: start;
 
             p {
               font-size: 14px;
@@ -90,20 +130,39 @@
 
             h6 {
               font-size: 16px;
+              font-weight: 600;
               color: #fff;
             }
 
             a {
               color: #4b8bf5;
               text-decoration: none;
+              transition: color 0.3s ease;
 
               &:hover {
                 text-decoration: underline;
+                color: #1a5fd6;
               }
             }
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .questionBlock {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .block {
+      padding: 20px 30px;
+      gap: 15px;
+    }
+
+    .datas {
+      gap: 15px;
     }
   }
 }

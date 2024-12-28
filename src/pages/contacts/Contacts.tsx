@@ -25,14 +25,12 @@ const Contacts: FC = () => {
         <div className={scss.content}>
           <div className={scss.mainNav}>
             {contacts.map((el) => (
-              <>
-                <div key={el.id} className={scss.contact_nav}>
-                  <div className={scss.icon}>
-                    <h1 className={scss.ico}>{el.icon}</h1>
-                    <span>{el.label}</span>
-                  </div>
+              <div key={el.id} className={scss.contact_nav}>
+                <div className={scss.icon}>
+                  <h1 className={scss.ico}>{el.icon}</h1>
+                  <span>{el.label}</span>
                 </div>
-              </>
+              </div>
             ))}
           </div>
           <Answer />

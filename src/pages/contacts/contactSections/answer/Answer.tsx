@@ -54,9 +54,7 @@ const Answer: FC = () => {
                 Ответим на любые интересующие вопросы и поможем с выбором
                 компьютера
               </p>
-              <span className={scss.linear}>
-                _______________________________________________________
-              </span>
+              <span className={scss.linear}></span>
               <div className={scss.datas}>
                 {datas.map((el, idx) => (
                   <>
@@ -77,9 +75,7 @@ const Answer: FC = () => {
                 Возникла проблема с устройством? Мы найдем для вас лучший
                 вариант поддержки
               </p>
-              <span className={scss.linear}>
-                _______________________________________________________
-              </span>
+              <span className={scss.linear}></span>
               <div className={scss.datas}>
                 {datas.map((el, idx) => (
                   <>

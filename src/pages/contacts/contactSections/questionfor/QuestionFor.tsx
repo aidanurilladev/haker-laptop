@@ -7,25 +7,27 @@ const QuestionFor: FC = () => {
       <div className="container">
         <div className={scss.wrapper}>
           <div className={scss.left}>
-            <h2>ОСТАЛИСЬ ЕЩЁ ВОПРОСЫ?</h2>
+            <h2>
+              ОСТАЛИСЬ ЕЩЁ <br /> ВОПРОСЫ?
+            </h2>
             <p>
-              Заполните форму и мы перезвоним, чтобы ответить на ваш вопрос.
-              Если не дозвонимся — напишем в мессенджеры.
+              Заполните форму и мы перезвоним, чтобы ответить <br /> на ваш
+              вопрос. Если не дозвонимся — напишем в мессенджеры.
             </p>
           </div>
           <div className={scss.right}>
             <form>
               <div className={scss.inputGroup}>
-                <label>Имя *</label>
+                <label>Имя </label>
                 <input type="text" placeholder="Введите имя" required />
               </div>
               <div className={scss.inputGroup}>
-                <label>Email *</label>
+                <label>Email </label>
                 <input type="email" placeholder="Введите Email" required />
               </div>
               <div className={scss.inputGroup}>
-                <label>Телефон *</label>
-                <input type="tel" placeholder="+7 (" required />
+                <label>Телефон </label>
+                <input type="tel" placeholder="+996--" required />
               </div>
               <div className={scss.checkboxGroup}>
                 <input type="checkbox" id="messenger" />
