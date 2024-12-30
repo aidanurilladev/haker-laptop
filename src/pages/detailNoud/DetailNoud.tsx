@@ -18,7 +18,7 @@ const DetailNoud: FC = () => {
             </div>
             <div className={scss.detalTex}>
               <h1>
-                Apple MacBook Pro 14.2" <br />
+                Apple MacBook Pro 14.2 <br />
                 M3 (8С CPU/10С GPU) <br />8 ГБ, 1 ТБ Серый Космос
               </h1>
               <span>MR7K3RU/A</span>
@@ -78,7 +78,7 @@ const DetailNoud: FC = () => {
               <hr />
               <div className={scss.tex}>
                 <span>Диагональ экрана </span>
-                <p>"14.2"</p>
+                <p>14.2</p>
               </div>
               <hr />
               <div className={scss.tex}>
@@ -202,8 +202,8 @@ const DetailNoud: FC = () => {
               <div className={scss.tex}>
                 <span>Аксессуары в комплекте </span>
                 <p>
-                  MacBook Pro Адаптер питания USB-C USB-C Charge Cable (2 m)
-                  Руководство пользователя
+                  MacBook Pro Адаптер питания USB-C USB-C <q>Charge</q> Cable (2
+                  m) Руководство пользователя
                 </p>
               </div>
               <hr />

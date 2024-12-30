@@ -57,12 +57,10 @@ const Answer: FC = () => {
               <span className={scss.linear}></span>
               <div className={scss.datas}>
                 {datas.map((el, idx) => (
-                  <>
-                    <div key={idx} className={scss.data}>
-                      <p>{el.name}</p>
-                      <h6>{el.value}</h6>
-                    </div>
-                  </>
+                  <div key={idx} className={scss.data}>
+                    <p>{el.name}</p>
+                    <h6>{el.value}</h6>
+                  </div>
                 ))}
               </div>
             </div>
