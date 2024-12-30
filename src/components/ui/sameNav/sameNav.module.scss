@@ -1,0 +1,45 @@
+.Contacts {
+  z-index: 999;
+  .content {
+    .mainNav {
+      background-color: #1c1c1f;
+      width: 100%;
+      max-width: 1500px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+
+      .contact_nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        gap: 100px;
+        width: auto;
+        max-width: 1500px;
+        margin: 0 30px;
+
+        .icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #999;
+          cursor: pointer;
+
+          &:hover {
+            color: white;
+          }
+
+          span {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .ico {
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
+}
