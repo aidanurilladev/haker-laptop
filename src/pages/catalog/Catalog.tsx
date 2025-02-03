@@ -1,8 +1,11 @@
+"use client";
 import scss from "./Catalog.module.scss";
 import { FaArrowRightLong } from "react-icons/fa6";
 import NavBar from "./navbar/NavBar";
 import laptop from "@/assets/6ac63fa27eb76bb5491a83af9b39cf46.jpg";
 import Image from "next/image";
+import { FC } from "react";
+import { useRouter } from "next/navigation";
 
 const laptops = [
   {
@@ -101,7 +104,8 @@ const laptops = [
   },
 ];
 
-const Catalog = () => {
+const Catalog: FC = () => {
+  const router = useRouter();
   return (
     <div className={scss.Catalog}>
       <NavBar />
@@ -110,7 +114,11 @@ const Catalog = () => {
           <div className={scss.cards}>
             {laptops.map((item) => (
               <div className={scss.card} key={item.id}>
-                <Image src={laptop} alt="photo" />
+                <Image
+                  onClick={() => router.push("/detailNoud")}
+                  src={laptop}
+                  alt="photo"
+                />
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
                 <div className={scss.priceSale}>
