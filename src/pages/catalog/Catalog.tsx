@@ -8,8 +8,8 @@ const laptops = [
   {
     id: 1,
     name: "Apple MacBook Air M1",
-    price: 90000, // Цена в рублях
-    sale: 10, // Скидка 10%
+    price: 90000, 
+    sale: 10, 
     brand: "Apple",
     processor: "Apple M1",
     ram: "8 GB",
@@ -27,8 +27,8 @@ const laptops = [
   {
     id: 2,
     name: "Dell XPS 13 9310",
-    price: 100000, // Цена в рублях
-    sale: 15, // Скидка 15%
+    price: 100000, 
+    sale: 15, 
     brand: "Dell",
     processor: "Intel Core i7-1165G7",
     ram: "16 GB",
