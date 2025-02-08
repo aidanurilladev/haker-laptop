@@ -9,14 +9,14 @@ import { HiOutlineMicrophone } from "react-icons/hi2";
 import Link from "next/link";
 
 const accessories = [
-  { icon: <CgMenuGridR />, label: "Все аксессуары" },
+  { icon: <CgMenuGridR />, label: "Все аксессуары",href: "/all-accessories"},
 
-  { icon: <BsKeyboard />, label: "Клавиатуры", href: "/all-accessories" },
-  { icon: <PiMouseMiddleClickLight />, label: "Мышки", href: "/keyboards"},
-  { icon: <TbDeviceIpadHorizontal />, label: "Коврики" },
-  { icon: <CiHeadphones />, label: "Наушники" },
-  { icon: <HiOutlineMicrophone />, label: "Микрофоны" },
-  { icon: <PiBagSimpleThin />, label: "Сумки" },
+  { icon: <BsKeyboard />, label: "Клавиатуры", href: "/keyboards" },
+  { icon: <PiMouseMiddleClickLight />  ,label: "Мышки", href: "/keyboards"},
+  { icon: <TbDeviceIpadHorizontal />, label: "Коврики",href: "/keyboards" },
+  { icon: <CiHeadphones />, label: "Наушники", href: "/keyboards"},
+  { icon: <HiOutlineMicrophone />, label: "Микрофоны",href: "/keyboards" },
+  { icon: <PiBagSimpleThin />, label: "Сумки",href: "/keyboards" },
 ];
 
 const Accessory = () => {

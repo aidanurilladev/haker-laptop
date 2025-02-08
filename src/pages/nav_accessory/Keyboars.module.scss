@@ -1,0 +1,72 @@
+#keyboards{
+    h1{
+        font-size: 45px;
+          text-align: center;
+          margin-bottom:20px ;
+      }
+
+      p{
+          text-align: center;
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 50px;
+
+      }
+
+
+    .keyboards{
+      display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+  gap: 50px;
+        .keyboardCard{
+            border: 1px solid white;
+            width: 400px;
+            height: auto;
+            .keyboardText{
+                padding: 20px 20px;
+                border: 1px solid white;
+            
+                h3{
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+
+
+                }
+                .buy{
+                    display: flex;
+                   
+                    
+                    gap: 30px;
+                    h2{
+                        margin-top: 15px;
+                    }
+
+                    button{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 0 20px;
+                    
+                        background: #c0ff01;
+                        border: none;
+                        outline: none;
+                        color: black;
+                        font-size: 20px;
+
+                        span{
+                           font-size: 20px;
+
+                        }
+                    }
+                }
+
+            }
+           
+
+           
+        }
+        
+    }
+}
