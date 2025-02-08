@@ -5,13 +5,12 @@ import Image from "next/image";
 import hak_klv from "@/assets/haker-klviatura.jpg";
 import mouse from "@/assets/haker-mouse.jpg";
 import mat from "@/assets/haker-mat.jpg";
+import Link from "next/link";
 
 const accessories = [
   { id: 1, image: hak_klv, title: "Клавиатура" },
   { id: 2, image: mouse, title: "Мышь" },
   { id: 3, image: mat, title: "Клавиатура" },
-
-
 
 ];
 
@@ -27,13 +26,17 @@ const CardsAccessory = () => {
             Наши эксперты по геймингу помогут выбрать лучшие игровые аксессуары
             для максимально комфортной игры!
           </p>
-        </div>
+        </div>x
         <div className={sass.cards}>
           {accessories.map(({ id, image, title }) => (
-            <div key={id} className={sass.cardsBlock}>
-              <Image src={image} alt={title} />
-              <h1>{title}</h1>
-            </div>
+         
+<Link href={"/nav_accesory"} key={id} className={sass.cardsBlock}>
+            <Image src={image} alt={title} />
+            <h1>{title}</h1>
+          </Link>
+        
+            
+           
           ))}
         </div>
       </div>

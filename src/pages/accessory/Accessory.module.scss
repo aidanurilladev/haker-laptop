@@ -14,8 +14,14 @@
     text-align: center;
     color: #999;
 
-    &:hover {
+    a{
+        text-decoration: none;
+        color:  #999;
+    }
+
+    a:hover {
       color: white;
+      cursor: pointer;
     }
 
     h1 {
@@ -23,6 +29,7 @@
       display: block;
       font-size: 50px;
       line-height: 1.2;
+      
 
     }
   }
