@@ -1,3 +1,4 @@
+"use client";
 import { FC } from "react";
 import scss from "./DetailNoud.module.scss";
 import noud from "@/assets/noud.webp";
@@ -6,8 +7,12 @@ import { FaCar } from "react-icons/fa";
 import { BsBox2 } from "react-icons/bs";
 import { IoNavigate } from "react-icons/io5";
 import { TbTruckDelivery } from "react-icons/tb";
+import { useGetLaptopQuery } from "@/redux/api/product";
 
 const DetailNoud: FC = () => {
+  const { data } = useGetLaptopQuery();
+  console.log(data, "f");
+
   return (
     <section className={scss.DetailNoud}>
       <div className="container">
@@ -254,6 +259,18 @@ const DetailNoud: FC = () => {
               </div>
             </div>
           </div>
+          {data?.map((el, item) => (
+            <div key={item} className="">
+              <h2>{el.laptop_name}</h2>
+              <h2>{el.description}</h2>
+              <h2>{el.category.category_name}</h2>
+              {el.photo_laptop.map((elem, idx) => (
+                <div key={idx} className="">
+                  <img src={elem.img} alt="" />
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </section>
