@@ -1,7 +1,7 @@
 "use client";
 import { FC } from "react";
 import scss from "./DetailNoud.module.scss";
-import noud from "@/assets/noud.webp";
+import noud from "@/assets/noud.webp"
 import Image from "next/image";
 import { FaCar } from "react-icons/fa";
 import { BsBox2 } from "react-icons/bs";
@@ -12,12 +12,38 @@ import { useGetLaptopQuery } from "@/redux/api/product";
 const DetailNoud: FC = () => {
   const { data } = useGetLaptopQuery();
   console.log(data, "f");
-
   return (
     <section className={scss.DetailNoud}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.all}>
+            {data?.map((el, index) => (
+             <div key={ index} className={scss.block}>
+              <div  className={scss.imgNoud}>
+                {el.photo_laptop.map((elem, photoIndex) => (
+                  <div
+                    key={`photo-${index}-${photoIndex}`}
+                    className={scss.forimg}
+                  >
+                      <Image
+                        width={50}
+                        height={50}
+                        src={elem.img}
+                        alt={`${el.laptop_name || "Laptop"} photo ${
+                          photoIndex + 1
+                        }`}
+                      />
+                  </div>
+                ))}
+                
+              </div>
+            <div className={scss.detalTex}>
+            <h2>{el.laptop_name}</h2>
+                <h2>{el.description}</h2>
+                <h2>{el.category.category_name}</h2>
+            </div>
+             </div>
+            ))}
             <div className={scss.imgNoud}>
               <Image src={noud} alt="img" />
             </div>
@@ -259,18 +285,7 @@ const DetailNoud: FC = () => {
               </div>
             </div>
           </div>
-          {data?.map((el, item) => (
-            <div key={item} className="">
-              <h2>{el.laptop_name}</h2>
-              <h2>{el.description}</h2>
-              <h2>{el.category.category_name}</h2>
-              {el.photo_laptop.map((elem, idx) => (
-                <div key={idx} className="">
-                  <img src={elem.img} alt="" />
-                </div>
-              ))}
-            </div>
-          ))}
+
         </div>
       </div>
     </section>
